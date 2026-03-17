@@ -10,22 +10,21 @@ const gifStages = [
 ]
 
 const noMessages = [
-    "No",
-    "Are you positive? 🤔",
-    "Pookie please... 🥺",
-    "If you say no, I will be really sad...",
-    "I will be very sad... 😢",
+    "Não",
+    "Tens a certeza ? 🤔",
+    "Não sejas má... 🥺",
+    "Se disseres não, eu fico muito triste...",
+    "Vou ficar muito triste... 😢",
     "Please??? 💔",
-    "Don't do this to me...",
-    "Last chance! 😭",
-    "You can't catch me anyway 😜"
+    "Não faças isso...",
+    "Última chance! 😭",
+    "Não me apanhas de qualquer maneira 😜"
 ]
 
 const yesTeasePokes = [
-    "try saying no first... I bet you want to know what happens 😏",
-    "go on, hit no... just once 👀",
-    "you're missing out 😈",
-    "click no, I dare you 😏"
+    "tenta dizer que não... aposto que queres saber o que acontece 😏",
+    "anda lá, diz não... só uma vez 👀",
+    "dá clique no Não, aposto que não consegues 😏"
 ]
 
 let yesTeasedCount = 0
@@ -48,7 +47,7 @@ music.play().then(() => {
     // Fallback: unmute on first interaction
     document.addEventListener('click', () => {
         music.muted = false
-        music.play().catch(() => {})
+        music.play().catch(() => { })
     }, { once: true })
 })
 
